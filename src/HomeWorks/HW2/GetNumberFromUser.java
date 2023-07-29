@@ -15,22 +15,22 @@ public class GetNumberFromUser {
      */
     public static int getNumber(String message){
         Scanner scanner = new Scanner(System.in);
-        boolean is_continue = true;
+        boolean isContinue = true;
         int number = 0;
 
-        while (is_continue) {
-            is_continue = false;
+        while (isContinue) {
+            isContinue = false;
             System.out.printf("Введите %s: ", message);
             String inputFromUser = scanner.nextLine();
 
             for (Character symbol : inputFromUser.toCharArray()) {
                 if (!Character.isDigit(symbol)) {
-                    is_continue = true;
+                    isContinue = true;
                     break;
                 }
             }
 
-            if (!is_continue) {
+            if (!isContinue) {
                 number = Integer.parseInt(inputFromUser);
                 break;
             }
