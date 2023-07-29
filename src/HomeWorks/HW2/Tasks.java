@@ -15,6 +15,7 @@ public class Tasks {
      * @param number Число которое нужно проверить.
      * @throws InvalidNameException Если число отрицательное или равно нулю выдает исключение.
      */
+
     public static void Task1(int number) throws InvalidNameException {
         if (number <= 0) {
             throw new InvalidNameException("Некорректное число: " + number);
