@@ -16,9 +16,9 @@ public class Tasks {
      * @throws InvalidNameException Если число отрицательное или равно нулю выдает исключение.
      */
 
-    public static void Task1(int number) throws InvalidNameException {
+    public static void Task1(int number) throws InvalidNumberException {
         if (number <= 0) {
-            throw new InvalidNameException("Некорректное число: " + number);
+            throw new InvalidNumberException("Некорректное число: " + number);
         }
         else System.out.println("Число корректно: " + number);
     }
@@ -28,7 +28,7 @@ public class Tasks {
      * Задача 2:
      * Напишите программу, которая запрашивает у пользователя два числа и выполняет их деление.
      * Если второе число равно нулю, программа должна выбрасывать исключение DivisionByZeroException с сообщением "Деление на ноль недопустимо".
-     * В противном случае, программа должна выводить результат деления.     *
+     * В противном случае, программа должна выводить результат деления.
      * Обратите внимание, что в обоих задачах используются собственные исключения, которые наследуются от класса Exception.
      * Это позволяет нам определить специфическую причину ошибки и передать информацию об ошибке для последующей обработки.
      *

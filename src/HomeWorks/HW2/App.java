@@ -9,7 +9,7 @@ public class App {
         try {
             Tasks.Task1(GetNumberFromUser.getNumber("положительное число"));
             Tasks.Task1(GetNumberFromUser.getNumber("0 или отрицательное число"));
-        } catch (InvalidNameException msg) {
+        } catch (InvalidNumberException msg) {
             System.out.println(msg.getMessage());
         }
 
