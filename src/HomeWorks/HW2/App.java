@@ -1,6 +1,6 @@
 package HomeWorks.HW2;
 
-import javax.naming.InvalidNameException;
+import HomeWorks.HW2.GetNumberFromUser;
 
 public class App {
     public static void main(String[] args) {
