@@ -1,7 +1,5 @@
 package HomeWorks.HW3;
 
-import HomeWorks.GetDoubleFromUser;
-
 public class App {
     public static void main(String[] args) {
 
